@@ -13,6 +13,14 @@ import HookCounterThree from './4.useStateObj/HookCounterThree.jsx'
 import HookCounterCondition from "./7.conditionallyRunEffect/HookCounterCondition.jsx"
 import ClassMouse from './8.RunEffectsOnce/ClassMouse.jsx'
 import HookMouse from './8.RunEffectsOnce/HookMouse.jsx'
+import MouseContainer from './10.useEffectWithCleanup/MouseContainer.jsx'
+import IntervalClassCounter from "./11.useEffectIncorrect/IntervalClassCounter.jsx"
+import IntervalHook from './11.useEffectIncorrect/IntervalHook.jsx'
+import DataFetching from './12.FetchingData/DataFetching.jsx'
+
+import DataFetching2 from './13.DataFetching/DataFetching2.jsx'
+import DataFetching3 from './13.DataFetching/DataFetching3.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,9 +34,14 @@ createRoot(document.getElementById('root')).render(
     {/* <HookCounter /> */}
     {/* <ClassCounter /> */}
     {/* <HookCounterCondition /> */}
-
     {/* <ClassMouse /> */}
+    {/* <MouseContainer /> */}
+    {/* <IntervalClassCounter /> */}
+    {/* <IntervalHook /> */}
 
-    <HookMouse/>
+    {/* <DataFetching /> */}
+    {/* <DataFetching2 /> */}
+
+    <DataFetching3 />
   </StrictMode>,
 )
