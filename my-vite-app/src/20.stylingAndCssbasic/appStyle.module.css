@@ -1,0 +1,9 @@
+.success{
+    color:green
+}
+
+/* module style sheet will be imported like import name from "./ path" */
+
+/* normal style sheet will be import './path' */
+
+/* class are locally scoped */
