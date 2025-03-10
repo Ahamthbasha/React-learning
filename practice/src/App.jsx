@@ -15,9 +15,11 @@ import NoRenderRef from "./questions/useRef";
 // import About from "./questions/UseHistoryNav";
 import ClickEvent from "./questions/OnClick";
 import Input from "./questions/onChange";
-
 import Home from "./ReactRouter/Home";
-
+import Card from "./Assignment/Question1"
+import Count from "./Assignment/Question2";
+import Info from "./Assignment/Question3";
+import InputForm from "./Assignment/Question4";
 
 const App=() =>{
   return (
@@ -67,7 +69,18 @@ const App=() =>{
 {/* <ClickEvent /> */}
 {/* <Input/> */}
 
-<Home />
+{/* <Home /> */}
+
+
+{/* assignment */}
+
+{/* <Card /> */}
+
+{/* <Count /> */}
+
+{/* <Info /> */}
+
+<InputForm />
     </div>
   )
 }
