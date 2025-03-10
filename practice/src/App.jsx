@@ -20,6 +20,54 @@ import Card from "./Assignment/Question1"
 import Count from "./Assignment/Question2";
 import Info from "./Assignment/Question3";
 import InputForm from "./Assignment/Question4";
+import Message from "./revising/message"
+import Click from "./revising/message";
+import ShowElement from "./revising/message"
+import CounterApp from "./revising/message";
+// import EventBind from "./revising/message";
+import FunctionPractice from "./revising/FunctionPractice";
+import ParentComponent from "./revising/ChildParent/ParentComponent";
+// import ParentComponent from "./revising/Parenttochild/ParentComponent";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const App=() =>{
   return (
@@ -80,7 +128,37 @@ const App=() =>{
 
 {/* <Info /> */}
 
-<InputForm />
+{/* <InputForm /> */}
+
+
+{/* Revising */}
+
+{/* <Message/>  */}
+
+{/* <Click /> */}
+
+{/* <ShowElement /> */}
+{/* <ShowElement name="srk"/> */}
+
+{/* <CounterApp /> */}
+
+{/* <EventBind/> */}
+
+{/* <FunctionPractice /> */}
+
+{/* <FunctionPractice name="basha"/> */}
+
+{/* <FunctionPractice name="basha">
+  <p>hello from props children</p>
+</FunctionPractice> */}
+
+{/* <ParentComponent /> */}
+{/* 
+<ParentComponent /> */}
+
+
+
+
     </div>
   )
 }
