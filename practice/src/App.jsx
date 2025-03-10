@@ -26,12 +26,15 @@ import ShowElement from "./revising/message"
 import CounterApp from "./revising/message";
 // import EventBind from "./revising/message";
 import FunctionPractice from "./revising/FunctionPractice";
-import ParentComponent from "./revising/ChildParent/ParentComponent";
+// import ParentComponent from "./revising/ChildParent/ParentComponent";
+import ConditionalRendering from "./revising/message";
+import StyleSheet from "./revising/FunctionPractice";
+import Form from "./revising/message";
+import LifeCycle from "./revising/message";
+import Fragement from "./revising/FunctionPractice";
+import NormalComponent from "./revising/message";
 // import ParentComponent from "./revising/Parenttochild/ParentComponent";
-
-
-
-
+import ParentComponent from "./revising/PureComponent/ParentComponent";
 
 
 
@@ -156,9 +159,21 @@ const App=() =>{
 {/* 
 <ParentComponent /> */}
 
+{/* <ConditionalRendering/> */}
 
+{/* <FunctionPractice /> */}
 
+{/* <StyleSheet primary={true}/> */}
 
+{/* <Form /> */}
+
+{/* <LifeCycle /> */}
+
+{/* <Fragement /> */}
+
+{/* <NormalComponent name="basha"/> */}
+
+<ParentComponent />
     </div>
   )
 }

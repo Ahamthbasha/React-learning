@@ -8,5 +8,5 @@ const ListRenderingAntiKey = () => {
       return <div>{nameList}</div>
       }
       
-    export default ListRenderingAntiKey
+export default ListRenderingAntiKey
       
