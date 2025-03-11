@@ -9,6 +9,7 @@ function DataFetching3() {
     const handleClick = () =>{
       setIdFromButtonClick(id)
     }
+    
     useEffect(()=>{
         axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
         .then(res =>{

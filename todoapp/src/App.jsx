@@ -15,7 +15,7 @@ function App() {
 
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
-  };
+  };//it has the id which is not same
 
   const editTask = (id, updatedTask) => {
     setTasks(tasks.map((task) => (task.id === id ? updatedTask : task)));

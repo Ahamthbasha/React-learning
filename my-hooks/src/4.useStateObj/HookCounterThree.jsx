@@ -16,4 +16,4 @@ function HookCounterThree() {
 export default HookCounterThree
 
 
-// use state does not automatically merge or update object that is the reason we use ret parameter
+// use state does not automatically merge or update object that is the reason we use rest parameter

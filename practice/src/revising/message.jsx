@@ -385,14 +385,149 @@ import React, { Component } from 'react'
 // }
 
 
-class NormalComponent extends Component{
-    render(){
-        const {name} =this.props
-        console.log("render")
-        return(
+// class NormalComponent extends Component{
+//     render(){
+//         const {name} =this.props
+//         console.log("render")
+//         return(
             
-            <h1>{name}</h1>
+//             <h1>{name}</h1>
+//         )
+//     }
+// }
+
+// class CounterSimple extends Component{
+//     constructor(){
+//         super()
+
+//         this.state={
+//             count:0
+//         }
+//     }
+
+//     increment=() => {
+//         this.setState({
+//             count:this.state.count+1
+//         })
+//     }
+
+//     render(){
+//         return(
+//             <div>
+//                 <h1>Count-{this.state.count}</h1>
+//                 <button onClick={this.increment}>click</button>
+//             </div>
+//         )
+//     }
+// }
+
+// class CounterSimple extends Component{
+//     constructor(){
+//         super()
+//         this.state={
+//             count:0
+//         }
+//     }
+
+//     componentDidMount(){
+//         document.title=`you clicked ${this.state.count}`
+//     }
+
+//     componentDidUpdate(prevState,prevCount){
+//         document.title=`you clicked ${this.state.count}`
+//     }
+
+//     render(){
+//         return(
+//             <div>
+//                 <h1>count-{this.state.count}</h1>
+//                 <button onClick={() => this.setState({count:this.state.count+1})}>increment</button>
+//             </div>
+//         )
+//     }
+// }
+
+// class CounterSimple extends Component{
+
+//     constructor(){
+//         super()
+
+//         this.state={
+//             name:'',
+//             showMessage:false
+//         }
+//     }
+
+//     componentDidMount(){
+//         console.log("component mounted")
+//     }
+
+//     componentDidUpdate(prevState,prevProps){
+//         if(prevState.name != this.state.name){
+//             console.log("component updated")
+//         }
+//     }
+
+//     inputShow=(e) => {
+//         this.setState({
+//             name:e.target.value
+//         })
+//     }
+
+//     showName=()=>{
+//         this.setState({
+//             showMessage:true
+//         })
+//     }
+
+//     render(){
+//         return(
+            // <div>
+            //     <input type="text" value={this.state.name} onChange={this.inputShow} />
+            //     <h1>{this.state.name}</h1>
+            // </div>
+
+//             <div>
+//                 <input type="text" value={this.state.name} onChange={this.inputShow}/>
+//                 <button onClick={this.showName}>Click to see the message</button>
+//                 {this.state.showMessage && <h1>{this.state.name}</h1>}
+//             </div>
+//         )
+//     }
+
+// }
+
+class CounterSimple extends Component{
+    constructor(){
+        super()
+
+        this.state={
+            count:0
+        }
+    }
+
+    increment=()=>{
+        this.setState({
+            count:this.state.count+1
+        })
+    }
+
+    decrement=() => {
+        this.setState({
+            count:this.state.count-1
+        })
+    }
+    
+    render(){
+        return(
+            <div>
+                <h1>Count-{this.state.count}</h1>
+                <button onClick={this.increment}>Increment</button>
+                <button onClick={this.decrement}>Decrement</button>
+            </div>
         )
     }
 }
-export default NormalComponent
+
+
+export default CounterSimple

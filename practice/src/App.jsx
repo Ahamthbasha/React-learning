@@ -35,6 +35,9 @@ import Fragement from "./revising/FunctionPractice";
 import NormalComponent from "./revising/message";
 // import ParentComponent from "./revising/Parenttochild/ParentComponent";
 import ParentComponent from "./revising/PureComponent/ParentComponent";
+import CounterSimple from "./revising/message";
+import CountSimple from "./revising/FunctionPractice";
+import InputType from "./revising/FunctionPractice";
 
 
 
@@ -173,7 +176,19 @@ const App=() =>{
 
 {/* <NormalComponent name="basha"/> */}
 
-<ParentComponent />
+{/* <ParentComponent /> */}
+
+{/* <CounterSimple /> */}
+
+{/* <CountSimple /> */}
+
+<InputType/>
+
+
+
+
+
+
     </div>
   )
 }
