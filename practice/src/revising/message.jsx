@@ -497,37 +497,150 @@ import React, { Component } from 'react'
 
 // }
 
-class CounterSimple extends Component{
-    constructor(){
-        super()
+// class CounterSimple extends Component{
+//     constructor(){
+//         super()
 
-        this.state={
-            count:0
-        }
-    }
+//         this.state={
+//             count:0
+//         }
+//     }
 
-    increment=()=>{
-        this.setState({
-            count:this.state.count+1
-        })
-    }
+//     increment=()=>{
+//         this.setState({
+//             count:this.state.count+1
+//         })
+//     }
 
-    decrement=() => {
-        this.setState({
-            count:this.state.count-1
-        })
-    }
+//     decrement=() => {
+//         this.setState({
+//             count:this.state.count-1
+//         })
+//     }
     
-    render(){
-        return(
-            <div>
-                <h1>Count-{this.state.count}</h1>
-                <button onClick={this.increment}>Increment</button>
-                <button onClick={this.decrement}>Decrement</button>
-            </div>
-        )
-    }
-}
+//     render(){
+//         return(
+//             <div>
+//                 <h1>Count-{this.state.count}</h1>
+//                 <button onClick={this.increment}>Increment</button>
+//                 <button onClick={this.decrement}>Decrement</button>
+//             </div>
+//         )
+//     }
+// }
+
+// class CounterSimple extends Component{
+//     constructor(){
+//         super()
+
+//         this.state={
+//             count:0
+//         }
+//     }
+
+//     increment=()=>{
+//         this.setState({
+//             count:this.state.count+1
+//         })
+//     }
+
+//     decrement=() => {
+//         this.setState({
+//             count:this.state.count-1
+//         })
+//     }
+
+//     render(){
+//         return(
+//             <div>
+//                 <h1>{this.state.count}</h1>
+//                 <button onClick={this.increment}>Increment</button>
+//                 <button onClick={this.decrement}>Decrement</button>
+//             </div>
+//         )
+//     }
+// }
+
+// class CounterSimple extends Component{
+//     constructor(){
+//         super()
+
+//         this.state={
+//             count:0
+//         }
+//     }
+
+//     componentDidMount(){
+//         console.log("component mounted")
+//     }
+
+//     componentDidUpdate(){
+//         console.log("component update")
+//     }
+
+//     componentWillUnmount(){
+//         console.log("component is unMounted")
+//     }
+
+//     increment=()=>{
+//         this.setState({
+//             count:this.state.count+1
+//         })
+//     }
+
+//     decrement=() =>{
+//         this.setState({
+//             count:this.state.count-1
+//         })
+//     }
+
+//     render(){
+//         return(
+//             <div>
+//               <h1>{this.state.count}</h1>
+//               <button onClick={this.increment}>Increment</button>
+//               <button onClick={this.decrement}>Decrement</button>
+//             </div>
+//         )
+//     }
+// }
+
+// class CounterSimple extends Component {
+//     constructor() {
+//       super();
+//       this.state = {
+//         count: 0
+//       };
+//       this.timerId = null; // Declare timerId to store interval reference
+//     }
+  
+//     componentDidMount() {
+//       console.log("Component mounted");
+//       this.timerId = setInterval(() => {
+//         this.setState((prevState) => ({
+//           count: prevState.count + 1
+//         }));
+//       }, 1000); // Increment count every second
+//     }
+  
+//     componentDidUpdate() {
+//       console.log("Component updated", this.state.count);
+//     }
+  
+//     componentWillUnmount() {
+//       console.log("Component is unmounted");
+//       clearInterval(this.timerId); // Clearing the interval when component unmounts
+//     }
+  
+//     render() {
+//       return (
+//         <div>
+//           <h1>Timer: {this.state.count} sec</h1>
+//         </div>
+//       );
+//     }
+//   }
+  
 
 
 export default CounterSimple

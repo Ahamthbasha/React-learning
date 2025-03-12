@@ -178,11 +178,11 @@ const App=() =>{
 
 {/* <ParentComponent /> */}
 
-{/* <CounterSimple /> */}
+<CounterSimple />
 
 {/* <CountSimple /> */}
 
-<InputType/>
+{/* <InputType/> */}
 
 
 

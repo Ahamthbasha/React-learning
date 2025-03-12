@@ -1,5 +1,5 @@
 import React,{useState,useEffect,useRef} from 'react'
-import ChildComponent from './FunctionPractice2'
+import FunctionPractice2 from './FunctionPractice2'
 // import Person from './Person';
 
 // import MyStyle from './myStyle.css'
@@ -615,33 +615,192 @@ function FunctionPractice() {
 //   );
 // };
 
-const InputType=() => {
-  const[value,setValue] =useState('')
+// const InputType=() => {
+//   const[value,setValue] =useState('')
 
-  const inputRef=useRef(null)
+//   const inputRef=useRef(null)
 
-  const prevRef=useRef('')
+//   const prevRef=useRef('')
 
-  const handleInput=(e) =>{
-    setValue(e.target.value)
+//   const handleInput=(e) =>{
+//     setValue(e.target.value)
+//   }
+
+//   useEffect(()=>{
+//     prevRef.current=value
+//   },[value])
+
+//   const focusInput = () => {
+//     inputRef.current.focus(); // Using useRef to focus the input field
+//   };
+
+//   return(
+//     <div>
+//       <h1>currentInput:{value}</h1>
+//       <h2>prevInput:{prevRef.current}</h2>
+
+//       <input type="text" ref={inputRef} value={value} onChange={handleInput}/>
+//       <button onClick={focusInput}>Focus Input</button>
+
+//     </div>
+//   )
+// }
+
+// const InputType=() => {
+//   const message="hello child"
+
+//   return(
+//     <div>
+//       <h1>Parent</h1>
+//       <FunctionPractice2 message={message}/>
+//     </div>
+//   )
+// }
+
+// const InputType=() => {
+//   const [data,setData]=useState('')
+
+//   const settingData=(data)=>{
+//     setData(data)
+//   }
+
+//   return(
+//     <div>
+//       <h1>ParentComponent:{data}</h1>
+//       <FunctionPractice2 onReceiveData={settingData}/>
+//     </div>
+//   )
+// }
+
+// const InputType=() => {
+//   const [input,setInput]=useState('')
+
+//   const handleInput=(e)=>{
+//     setInput(e.target.value)
+//   }
+
+//   return(
+//     <div>
+//       <input type="text" value={input} onChange={handleInput} />
+//       <h1>{input}</h1>
+//     </div>
+//   )
+// }
+
+
+// const InputType=() =>{
+
+//   const [input,setInput] =useState('')
+//   const [show,setShow] =useState(false)
+
+//   const handleInput=(e)=>{
+//     setInput(e.target.value)
+//   }
+
+//   const showable=()=>{
+//     setShow(true)
+
+//     setInterval(()=>{
+//       setShow(false)
+//     },2000)
+//   }
+
+
+//   return(
+//     <div>
+//       <input type="text" value={input} onChange={handleInput}/>
+//       <button onClick={showable}>submit</button>
+//       {show && <h1>{input}</h1>}
+//     </div>
+//   )
+// }
+
+
+
+// const InputType=()=>{
+//   const[count,setCount] =useState(0)
+
+//   const increment=()=>{
+//     setCount(count+1)
+//   }
+
+//   const decrement=()=>{
+//     setCount(count-1)
+//   }
+
+//   return(
+//     <div>
+//       <h1>count-{count}</h1>
+//       <button onClick={increment}>Increment</button>
+//       <button onClick={decrement}>Decrement</button>
+//     </div>
+//   )
+// }
+
+
+// const InputType=()=>{
+//   const [data,setData] =useState('')
+
+//   const inputRef=useRef(null)
+
+//   const handleInput=(e) => {
+//     setData(e.target.value)
+//   }
+
+//   const focus=()=>{
+//     inputRef.current.focus()
+//   }
+
+//   return(
+//     <div>
+//       <input type="text" ref={inputRef} value={data} onChange={handleInput}/>
+//       <button onClick={focus}>Click to focus</button>
+//       <h1>{data}</h1>
+//     </div>
+//   )
+// }
+
+// const InputType=()=>{
+//   const name=["abcd","apple","orange","guava","philiphiness"]
+
+//   return(
+//     <div>
+//       <ul>
+
+//         {name.map((n,index)=>(
+//           <li key={index}>{n}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   )
+// }
+
+const InputType= ()=> {
+
+  const list=["abcd","apple","orange","guava","philiphiness"]
+
+  const[search,setSearch]=useState("")
+
+  const handleInput=(e) => {
+    setSearch(e.target.value)
   }
 
-  useEffect(()=>{
-    prevRef.current=value
-  },[value])
-
-  const focusInput = () => {
-    inputRef.current.focus(); // Using useRef to focus the input field
-  };
+  const filterList=list.filter((li)=>(
+    li.toLowerCase().includes(search.toLowerCase())
+  ))
 
   return(
     <div>
-      <h1>currentInput:{value}</h1>
-      <h2>prevInput:{prevRef.current}</h2>
 
-      <input type="text" ref={inputRef} value={value} onChange={handleInput}/>
-      <button onClick={focusInput}>Focus Input</button>
-
+      <input type="text" value={search} onChange={handleInput} />
+      
+      <ul>
+        {
+          filterList.map((fl,index)=>(
+            <li key={index}>{fl}</li>
+          ))
+        }
+      </ul>
     </div>
   )
 }
