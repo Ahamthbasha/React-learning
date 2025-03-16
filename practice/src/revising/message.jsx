@@ -605,41 +605,41 @@ import React, { Component } from 'react'
 //     }
 // }
 
-// class CounterSimple extends Component {
-//     constructor() {
-//       super();
-//       this.state = {
-//         count: 0
-//       };
-//       this.timerId = null; // Declare timerId to store interval reference
-//     }
+class CounterSimple extends Component {
+    constructor() {
+      super();
+      this.state = {
+        count: 0
+      };
+      this.timerId = null; // Declare timerId to store interval reference
+    }
   
-//     componentDidMount() {
-//       console.log("Component mounted");
-//       this.timerId = setInterval(() => {
-//         this.setState((prevState) => ({
-//           count: prevState.count + 1
-//         }));
-//       }, 1000); // Increment count every second
-//     }
+    componentDidMount() {
+      console.log("Component mounted");
+      this.timerId = setInterval(() => {
+        this.setState((prevState) => ({
+          count: prevState.count + 1
+        }));
+      }, 1000); // Increment count every second
+    }
   
-//     componentDidUpdate() {
-//       console.log("Component updated", this.state.count);
-//     }
+    componentDidUpdate() {
+      console.log("Component updated", this.state.count);
+    }
   
-//     componentWillUnmount() {
-//       console.log("Component is unmounted");
-//       clearInterval(this.timerId); // Clearing the interval when component unmounts
-//     }
+    componentWillUnmount() {
+      console.log("Component is unmounted");
+      clearInterval(this.timerId); // Clearing the interval when component unmounts
+    }
   
-//     render() {
-//       return (
-//         <div>
-//           <h1>Timer: {this.state.count} sec</h1>
-//         </div>
-//       );
-//     }
-//   }
+    render() {
+      return (
+        <div>
+          <h1>Timer: {this.state.count} sec</h1>
+        </div>
+      );
+    }
+  }
   
 
 

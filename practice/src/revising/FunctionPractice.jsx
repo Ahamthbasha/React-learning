@@ -1,5 +1,6 @@
 import React,{useState,useEffect,useRef} from 'react'
 import FunctionPractice2 from './FunctionPractice2'
+import FunctionPractice3 from './FunctionPractice3'
 // import Person from './Person';
 
 // import MyStyle from './myStyle.css'
@@ -775,34 +776,313 @@ function FunctionPractice() {
 //   )
 // }
 
-const InputType= ()=> {
+// const InputType= ()=> {
 
-  const list=["abcd","apple","orange","guava","philiphiness"]
+//   const list=["abcd","apple","orange","guava","philiphiness"]
 
-  const[search,setSearch]=useState("")
+//   const[search,setSearch]=useState("")
 
-  const handleInput=(e) => {
-    setSearch(e.target.value)
+//   const handleInput=(e) => {
+//     setSearch(e.target.value)
+//   }
+
+//   const filterList=list.filter((li)=>(
+//     li.toLowerCase().includes(search.toLowerCase())
+//   ))
+
+//   return(
+//     <div>
+
+//       <input type="text" value={search} onChange={handleInput} />
+      
+//       <ul>
+//         {
+//           filterList.map((fl,index)=>(
+//             <li key={index}>{fl}</li>
+//           ))
+//         }
+//       </ul>
+//     </div>
+//   )
+// }
+
+
+// const InputType=() => {
+
+//   const [data,setData] =useState('')
+
+//   const sendChild=(data) =>{
+
+//     setData(data)
+
+//   }
+
+//   return(
+//     <div>
+//       <h1>ParentComponent:{data}</h1>
+//       <FunctionPractice2 onReceiveData={sendChild}/>
+//     </div>
+//   )
+
+// }
+
+
+// const InputType=() =>{
+//   const initialValue=0
+//   const[count,setCount]=useState(initialValue)
+
+//   const increment=()=>{
+//     setCount(count+1)
+//   }
+
+//   const decrement=()=>{
+//     setCount(count-1)
+//   }
+
+//   const reset=()=>{
+//     setCount(initialValue)
+//   }
+
+//   return(
+//     <div>
+//       <h1>count:{count}</h1>
+//       <button onClick={increment}>Increment</button>
+//       <button onClick={decrement}>Decrement</button>
+//       <button onClick={reset}>Reset</button>
+//     </div>
+//   )
+// }
+
+
+// const InputType=() => {
+
+//   const [data,setData] = useState('')
+
+//   const handleInput=(e) => {
+//     setData(e.target.value)
+//   }
+
+
+//   return(
+//     <div>
+//       <h1>{data}</h1>
+//       <input type="text" value={data} onChange={handleInput}/>
+//     </div>
+//   )
+// }
+
+
+// const InputType=() => {
+
+//   const [data,setData] = useState("")
+//   const inputRef=useRef(null)
+
+//   const handleInput=(e) => {
+//     setData(e.target.value)
+//   }
+
+//   const focus=() => {
+//     <h1>{inputRef.current.value}</h1>
+//   }
+//   return(
+//     <div>
+//       <input type="text" ref={inputRef} value={data} onChange={handleInput}/>
+//       <button onClick={focus}>click to see the input message</button>
+//     </div>
+//   )
+// }
+
+// const InputType=()=>{
+//   const[data,setData] =useState('')
+//   const inputRef=useRef(null)
+
+//   const handleInput=(e) => {
+//     setData(e.target.value)
+//   }
+
+//   const GoToInput=() => {
+//     inputRef.current.focus()
+//   }
+//   return(
+//     <div>
+//       <input type="text" ref={inputRef} value={data} onChange={handleInput} />
+//       <button onClick={GoToInput}>Click</button>
+//     </div>
+//   )
+// }
+
+// const InputType=() => {
+//   const data=["basha","srk","amir","salman"]
+//   const [searchItem,setSearchItem] = useState("")
+//   const filterData=data.filter((n)=>(
+//     n.toLowerCase().includes(searchItem.toLowerCase())
+//   ))
+
+//   const handleInput=(e) => {
+//     setSearchItem(e.target.value)
+//   }
+
+//   return(
+//     <div>
+//       <input type="text" value={searchItem} onChange={handleInput} />
+//       <ul>
+//         {
+//           filterData.map((d)=>(
+//             <li key={d}>{d}</li>
+//           ))
+//         }
+//       </ul>
+//     </div>
+//   )
+// }
+
+// const InputType=(props) => {
+  
+//   return(
+//     <div>
+//       {
+//         props.data.map((pro)=>(
+//           <>
+//           <h1>{pro.name}</h1>
+//           <h2>{pro.email}</h2>
+//           </>
+//         ))
+//       }
+//     </div>
+//   )
+// }
+
+// const InputType=(props) => {
+//   return(
+//     <div>
+//       {props.data.map((pro)=>(
+//         <li>{pro}</li>
+//       ))}
+//     </div>
+//   )
+// }
+
+// const InputType=(props) =>{
+//   const {name} =props
+//   return(
+//     <div>
+//       <h1>{name}</h1>
+//     </div>
+//   )
+// }
+
+// const InputType=()=>{
+//   const[count,setCount] = useState(0)
+//   const[user,setUser] = useState({})
+
+//   useEffect(()=>{
+//     fetch(`https://jsonplaceholder.typicode.com/users/${count}`)
+//     .then((res)=>res.json())
+//     .then((data)=>setUser(data))
+//     .catch((error)=>console.log(error))
+//   },[count])
+
+//   const increment=()=>{
+//     setCount(count+1)
+//   }
+
+//   const decrement=()=>{
+//     setCount(count-1)
+//   }
+
+//   return(
+//     <>
+//     <h1>count:{count}</h1>
+//     <h1>{user.name}</h1>
+//     <button onClick={increment}>Increment</button>
+//     <button onClick={decrement}>Decrement</button>
+    
+//     </>
+//   )
+// }
+
+// const InputType=() => {
+//   const [show,setShow]=useState(false)
+
+//   const inputRef=useRef(null)
+
+
+//   const showOrNot=()=>{
+//     setShow(true)
+//   }
+
+//   return(
+//     <div>
+//       <input type="text" ref={inputRef} />
+
+//       <button onClick={showOrNot}>show input message</button>
+
+//       {show && <h1>{inputRef.current.value}</h1>}
+//     </div>
+//   )
+// }
+
+// const InputType=() => {
+//   const message="abcd"
+
+//   return(
+//     <div>
+//       <h1>parent message</h1>
+//       <FunctionPractice2 message={message}/>
+
+//     </div>
+//   )
+// }
+
+// const InputType=() => {
+//   const [data,setData]=useState('')
+
+//   const receiveData=(data)=>{
+//     setData(data)
+//   }
+
+//   return(
+//     <div>
+//       <h1>Parent  component</h1>
+//       <h2>child message:{data}</h2>
+//       <FunctionPractice2 oreceiveData={receiveData}/>
+//     </div>
+//   )
+// }
+
+const InputType=() => {
+
+  const initialState=0
+
+  const [count,setCount] =useState(initialState)
+
+  useEffect(()=>{
+    console.log("component mount and update")
+
+    return()=>{
+      console.log("component unmount")
+    }
+  },[count])
+
+  const increment=()=>{
+    setCount(count+1)
   }
 
-  const filterList=list.filter((li)=>(
-    li.toLowerCase().includes(search.toLowerCase())
-  ))
 
   return(
-    <div>
 
-      <input type="text" value={search} onChange={handleInput} />
-      
-      <ul>
-        {
-          filterList.map((fl,index)=>(
-            <li key={index}>{fl}</li>
-          ))
-        }
-      </ul>
+    <div>
+      <h1>count:{count}</h1>
+      <button onClick={increment}>Increment</button>
+      <FunctionPractice2 count={count}/>
+      <FunctionPractice3 count={count}/>
     </div>
   )
+
+
 }
+
+
+//increment,decrement,showValue
 
 export default InputType
