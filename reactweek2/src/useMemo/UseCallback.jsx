@@ -17,7 +17,7 @@ const UseCallback = () => {
     <div style={theme}>
       <input type="number" value={number} onChange={(e)=>setNumber(parseInt(e.target.value))} />
       <button onClick={()=>setDark((curr)=>!curr)}>ToggleThem</button>
-      <UseCallbackList getItems={getItems}/>
+      <UseCallbackList getItems={getItems} />
     </div>
   )
 }

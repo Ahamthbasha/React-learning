@@ -36,3 +36,8 @@ function slowFunction(no){
     }
     return no*2
 }
+
+
+
+
+export default UseMemoHook

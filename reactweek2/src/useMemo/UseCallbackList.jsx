@@ -6,6 +6,7 @@ const UseCallbackList = ({getItems}) => {
     useEffect(()=>{
         setItems(getItems(10))
     },[getItems])
+    
   return (
     <div>
       {
